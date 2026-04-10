@@ -1,0 +1,819 @@
+{
+  "info": {
+    "_postman_id": "3d0e0feb-f759-4262-8eef-a558315604fa",
+    "name": "automation-exercise",
+    "description": "#### [<u>API 1: Get All Products List</u>](https://automationexercise.com/api_list#collapse1)\n\n#### [<u>API 2: POST To All Products List</u>](https://automationexercise.com/api_list#collapse2)\n\n#### [<u>API 3: Get All Brands List</u>](https://automationexercise.com/api_list#collapse3)\n\n#### [<u>API 4: PUT To All Brands List</u>](https://automationexercise.com/api_list#collapse4)\n\n#### [<u>API 5: POST To Search Product</u>](https://automationexercise.com/api_list#collapse5)\n\n#### [<u>API 6: POST To Search Product without search_product parameter</u>](https://automationexercise.com/api_list#collapse6)\n\n#### [<u>API 7: POST To Verify Login with valid details</u>](https://automationexercise.com/api_list#collapse7)\n\n#### [<u>API 8: POST To Verify Login without email parameter</u>](https://automationexercise.com/api_list#collapse8)\n\n#### [<u>API 9: DELETE To Verify Login</u>](https://automationexercise.com/api_list#collapse9)\n\n#### [<u>API 10: POST To Verify Login with invalid details</u>](https://automationexercise.com/api_list#collapse10)\n\n#### [<u>API 11: POST To Create/Register User Account</u>](https://automationexercise.com/api_list#collapse11)\n\n#### [<u>API 12: DELETE METHOD To Delete User Account</u>](https://automationexercise.com/api_list#collapse12)\n\n#### [<u>API 13: PUT METHOD To Update User Account</u>](https://automationexercise.com/api_list#collapse13)\n\n#### [<u>API 14: GET user account detail by email</u>](https://automationexercise.com/api_list#collapse14)\n\n#### \\--> Mr. Bipro Saha - 6 April 2026",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46837907",
+    "_collection_link": "https://go.postman.co/collection/46837907-3d0e0feb-f759-4262-8eef-a558315604fa?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Products List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationexercise.com/api/productsList",
+          "protocol": "https",
+          "host": [
+            "automationexercise",
+            "com"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To All Products List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/productsList",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "productsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Brands List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/brandsList?ajax=true",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ],
+          "query": [
+            {
+              "key": "ajax",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT To All Brands List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/brandsList",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "brandsList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Search Product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "search_product",
+              "value": "top",
+              "type": "text",
+              "uuid": "47d88251-3c5e-4d5a-8b21-88ca45e89802"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/searchProduct",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Search Product without search_product parameter",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "search_product",
+              "value": "top",
+              "type": "text",
+              "uuid": "47d88251-3c5e-4d5a-8b21-88ca45e89802",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/searchProduct",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "searchProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login with valid details",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "b7ae1c0e-7220-47bc-839a-9ef8d480a4bb"
+            },
+            {
+              "key": "password",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "1c5e079d-307d-4830-a75a-d44ea5c8f5c2"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/verifyLogin",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login without email parameter",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "b7ae1c0e-7220-47bc-839a-9ef8d480a4bb",
+              "disabled": true
+            },
+            {
+              "key": "password",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "1c5e079d-307d-4830-a75a-d44ea5c8f5c2",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/verifyLogin",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE To Verify Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "b7ae1c0e-7220-47bc-839a-9ef8d480a4bb",
+              "disabled": true
+            },
+            {
+              "key": "password",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "1c5e079d-307d-4830-a75a-d44ea5c8f5c2",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/verifyLogin",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Verify Login with invalid details",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "biprosahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "b7ae1c0e-7220-47bc-839a-9ef8d480a4bb"
+            },
+            {
+              "key": "password",
+              "value": "biprosahabiproskill04@gmail.com",
+              "type": "text",
+              "uuid": "1c5e079d-307d-4830-a75a-d44ea5c8f5c2"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/verifyLogin",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "verifyLogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST To Create/Register User Account",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Bipro Saha",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "Sahamrbipro@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "sahamrbipro",
+              "type": "text"
+            },
+            {
+              "key": "title",
+              "value": "Saha",
+              "type": "text"
+            },
+            {
+              "key": "birth_date",
+              "value": "28",
+              "type": "text"
+            },
+            {
+              "key": "birth_month",
+              "value": "02",
+              "type": "text"
+            },
+            {
+              "key": "birth_year",
+              "value": "2000",
+              "type": "text"
+            },
+            {
+              "key": "firstname",
+              "value": "Bipro",
+              "type": "text"
+            },
+            {
+              "key": "lastname",
+              "value": "saha",
+              "type": "text"
+            },
+            {
+              "key": "company",
+              "value": "Self",
+              "type": "text"
+            },
+            {
+              "key": "address1",
+              "value": "Sahapara",
+              "type": "text"
+            },
+            {
+              "key": "address2",
+              "value": "keshabpur",
+              "type": "text"
+            },
+            {
+              "key": "country",
+              "value": "Bangladesh",
+              "type": "text"
+            },
+            {
+              "key": "zipcode",
+              "value": "7450",
+              "type": "text"
+            },
+            {
+              "key": "state",
+              "value": "Khulna",
+              "type": "text"
+            },
+            {
+              "key": "city",
+              "value": "Jashore",
+              "type": "text"
+            },
+            {
+              "key": "mobile_number",
+              "value": "01815696099",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/createAccount",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "createAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE METHOD To Delete User Account",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "Sahamrbipro@gmail.com",
+              "type": "text",
+              "uuid": "2622b95e-0efa-4f2e-8c1f-d59ddd995a24"
+            },
+            {
+              "key": "password",
+              "value": "sahamrbipro",
+              "type": "text",
+              "uuid": "c01b645b-773d-46d4-8ec2-e0f486d6fc6c"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/deleteAccount",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "deleteAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT METHOD To Update User Account",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Bipro Saha",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "sahabiproskill04@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "title",
+              "value": "Saha",
+              "type": "text"
+            },
+            {
+              "key": "birth_date",
+              "value": "28",
+              "type": "text"
+            },
+            {
+              "key": "birth_month",
+              "value": "02",
+              "type": "text"
+            },
+            {
+              "key": "birth_year",
+              "value": "2000",
+              "type": "text"
+            },
+            {
+              "key": "firstname",
+              "value": "Bipro",
+              "type": "text"
+            },
+            {
+              "key": "lastname",
+              "value": "saha",
+              "type": "text"
+            },
+            {
+              "key": "company",
+              "value": "Self",
+              "type": "text"
+            },
+            {
+              "key": "address1",
+              "value": "Sahapara",
+              "type": "text"
+            },
+            {
+              "key": "address2",
+              "value": "keshabpur",
+              "type": "text"
+            },
+            {
+              "key": "country",
+              "value": "Bangladesh",
+              "type": "text"
+            },
+            {
+              "key": "zipcode",
+              "value": "7450",
+              "type": "text"
+            },
+            {
+              "key": "state",
+              "value": "Khulna",
+              "type": "text"
+            },
+            {
+              "key": "city",
+              "value": "Jashore",
+              "type": "text"
+            },
+            {
+              "key": "mobile_number",
+              "value": "01815696099",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/updateAccount",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "updateAccount"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET user account detail by email",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "        pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/getUserDetailByEmail?email=sahabiproskill04@gmail.com",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "getUserDetailByEmail"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "sahabiproskill04@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://automationexercise.com"
+    }
+  ]
+}
